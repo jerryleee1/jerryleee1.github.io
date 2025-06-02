@@ -136,6 +136,33 @@ function getMonth(time) {
     }
   }
 
+  .num1 {
+    color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: PingFang SC,DFPKingGothicGB-Medium,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    display: flex;
+    position: absolute;
+    bottom: 4px;
+    left: 10px
+}
+  .semi-icon {
+    text-align: center;
+    text-transform: none;
+    text-rendering: optimizelegibility;
+    fill: currentColor;
+    font-style: normal;
+    line-height: 0;
+    display: inline-block
+}
+.num2 {
+    margin-left: 5px;
+    display: inline-block
+}
   .date {
     position: absolute;
     top: 5rem;
