@@ -126,12 +126,12 @@ function getMonth(time) {
     left: 5rem;
     display: flex;
     align-items: center;
-    font-size: 18rem;
+    font-size: 20rem;
     gap: 3rem;
 
     .love {
-      width: 18rem;
-      height: 18rem;
+      width: 14rem;
+      height: 14rem;
       margin-right: 5rem;
     }
   }
