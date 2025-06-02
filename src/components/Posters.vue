@@ -4,8 +4,8 @@
       <img class="poster" v-lazy="_checkImgUrl(i.video.cover.url_list[0])" alt="" />
       <template v-if="mode === 'normal'">
         <div class="num">
-          <Icon icon="icon-park-outline:like" />
-          <span>{{ _formatNumber(i.statistics.digg_count) }}</span>
+          <Icon icon="icon-park-outline:play-one" />
+          <span>{{ _formatNumber(i.statistics.play_count) }}</span>
         </div>
         <div class="top" v-if="i.is_top">置顶</div>
       </template>
