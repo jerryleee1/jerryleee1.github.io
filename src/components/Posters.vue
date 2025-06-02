@@ -3,10 +3,7 @@
     <div class="poster-item" :key="index" v-for="(i, index) in list" @click="goDetail(index)">
       <img class="poster" v-lazy="_checkImgUrl(i.video.cover.url_list[0])" alt="" />
       <template v-if="mode === 'normal'">
-        <div class="num">
-          <Icon icon="icon-park-outline:play-one" />
-          <span>{{ _formatNumber(i.statistics.play_count) }}</span>
-        </div>
+        <div class="num1"><span role="img" class="semi-icon" style="font-size: 20px;"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" focusable="false"><path d="M15.143 9.18076L7.26011 3.66272C6.59733 3.19877 5.68665 3.67293 5.68665 4.48195V15.518C5.68665 16.3271 6.59733 16.8012 7.26011 16.3373L15.143 10.8192C15.7117 10.4211 15.7117 9.57886 15.143 9.18076Z" stroke="currentColor" stroke-width="2.15" stroke-linejoin="round"></path></svg></span><span class="num2">{{ _formatNumber(i.statistics.digg_count) }}</span></div>
         <div class="top" v-if="i.is_top">置顶</div>
       </template>
       <div class="date" v-if="mode === 'date'">
